@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal & Vertical Align</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        /* จัดแนวนอนด้วย text-align */
+        .left {
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        /* กล่องตัวอย่างจัดกึ่งกลาง */
+        .box {
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+            margin-top: 20px;
+
+            /* จัดกึ่งกลางแนวนอน + แนวตั้ง */
+            display: flex;
+            justify-content: center; /* แนวนอน */
+            align-items: center;     /* แนวตั้ง */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ตัวอย่างการจัดแนวนอน (Horizontal Align)</h2>
+
+    <p class="left">ข้อความชิดซ้าย</p>
+    <p class="center">ข้อความอยู่กึ่งกลาง</p>
+    <p class="right">ข้อความชิดขวา</p>
+
+    <h2>ตัวอย่างการจัดแนวตั้ง + แนวนอน</h2>
+
+    <div class="box">
+        ข้อความอยู่กึ่งกลางกล่อง
+    </div>
+
+</body>
+</html>
